@@ -13,6 +13,16 @@ html {
 
 body {
     background-color: #c4f7c7;
+    margin: 0px;
+    overflow: hidden;
+}
+#video-bg{
+    position: fixed;
+    top: 0%;
+    left: 0%;
+    width: 100%;
+    object-fit: cover;
+    z-index: -1;  /* para que el video esté detras de la barra*/
 }
 
 ul,
@@ -54,6 +64,15 @@ img {
     margin-bottom: 5rem;
     /* height: 30vh; */
     flex-wrap: wrap;
+}
+.navbar{
+    position: absolute;
+    bottom: 20%;
+    left: 50%;
+    transform: translateX(-50%);
+    background-color: rgba(, , ,.7); /*Fondo semitransparente*/
+    display: flex;
+
 }
 
 .logo {
