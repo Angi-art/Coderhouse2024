@@ -15,71 +15,63 @@
         integrity="sha384-QWTKZyjpPEjISv5WaRU9OFeRpok6YctnYmDr5pNlyT2bRjXh0JMhjY6hW+ALEwIH" crossorigin="anonymous">
 </head>
 
-<body>
+<body class="contacto">
 
     <header class="encabezado">
-        <!--Contenedor de barra de navegación-->
-
-        <!--Logo de tienda-->
-        <div class="logo-container">
-            <a href="../index.html">
-                <img class="logo" src="../images/entreplantas.png" alt="logo">
-            </a>
-        </div>
-
-        <!-- Menu de navegacion -->
-
-        <nav class="menu">
-            <ul class="menu-list">
-                <li class="menu-item">
-                    <a class="menu-link" href="deco-home.html">Deco&Home</a>
-                </li>
-                <li class="menu-item">
-                    <a class="menu-link" href="plantas.html">Plantas</a>
-                </li>
-                <li class="menu-item">
-                    <a class="menu-link" href="macetas.html">Macetas</a>
-                </li>
-                <li class="menu-item">
-                    <a class="menu-link" href="accesorios.html">Accesarios</a>
-                </li>
-                <li class="menu-item">
-                    <a class="menu-link" href="contacto.html">Contactos</a>
-                </li>
-            </ul>
+        <nav class="navbar navbar-expand-lg bg-transparent">
+            <div class="container-fluid d-flex justify-content-around align-items-center">
+                <a class="navbar-brand" href="../index.html"><img class="logo" src="../images/entreplantas.png" alt="logo"></a>
+                <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
+                    <span class="navbar-toggler-icon"></span>
+                </button>
+                <div class="collapse navbar-collapse justify-content-center" id="navbarNav">
+                    <ul class="navbar-nav">
+                        <li class="nav-item">
+                            <a class="nav-link menu-link" aria-current="page" href="deco-home.html">Deco</a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link menu-link" href="plantas.html">Plantas</a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link menu-link" href="macetas.html">Macetas</a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link menu-link" href="accesorios.html">Accesorios</a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link menu-link" href="contacto.html">Contacto</a>
+                        </li>
+                    </ul>
+                </div>
+            </div>
         </nav>
+        
     </header>
 
     <main class="container">
 
         <h1>Contacto</h1>
         <a href="Index.HTML">Volver a Inicio</a>
-        <div class="text">"Todas nuestras plantitas fueron felizmente creadas y
-            cuidadas en nuestro vivero. Esperamos que los disfrutes y los ames tanto como a nosotros"
-            <input type="text" placeholder="todas nuestras plantitas fueron felizmente cradas y cuidadas en 
-        nuestro vivero. Esperamos que los disfrutes y los ames tanto como a nosotros.">
-
+        <div class="text-container">
+            <p class="text">"Todas nuestras plantitas fueron felizmente creadas y
+                cuidadas en nuestro vivero. Esperamos que los disfrutes y los ames tanto como a nosotros"
+            </p>
         </div>
-        Lorem ipsum dolor sit amet consectetur,
-        adipisicing elit. Tempora minima mollitia nobis. Quam necessitatibus dignissimos nostrum voluptates.
-        Tenetur et eos sequi esse non ea, error quae est nostrum illum unde?
 
         <form>
             <label>Nombre</label>
             <input type="text" placeholder="nombre">
             <label>Email</label>
-            <imput type="email" placeholder="email">
+            <input type="email" placeholder="email">
                 <label>telefono</label>
                 <input type="number" placeholder="telefono">
                 <label>mensaje</label>
-                <input type="text" placeholder="mensaje">
-
-
+                <input type="text" placeholder="mensaje" id="mensaje">
                 <input type="submit" class="btn" value="Enviar">
         </form>
     </main>
     <footer>
-        <div>
+        <div class="logo-container">
             <img class="logo" src="../images/entreplantas.png" alt="logo">
         </div>
         <ul class="redes">

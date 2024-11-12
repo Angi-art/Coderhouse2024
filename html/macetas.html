@@ -17,86 +17,84 @@
 
 <body>
     <header class="encabezado">
-        <!--Contenedor de barra de navegación-->
-
-        <!--Logo de tienda-->
-        <div class="logo-container">
-            <a href="../index.html">
-                <img class="logo" src="../images/entreplantas.png" alt="logo">
-            </a>
-        </div>
-
-        <!-- Menu de navegacion -->
-
-        <nav class="menu">
-            <ul class="menu-list">
-                <li class="menu-item">
-                    <a class="menu-link" href="deco-home.html">Deco&Home</a>
-                </li>
-                <li class="menu-item">
-                    <a class="menu-link" href="plantas.html">Plantas</a>
-                </li>
-                <li class="menu-item">
-                    <a class="menu-link" href="macetas.html">Macetas</a>
-                </li>
-                <li class="menu-item">
-                    <a class="menu-link" href="accesorios.html">Accesarios</a>
-                </li>
-                <li class="menu-item">
-                    <a class="menu-link" href="contacto.html">Contactos</a>
-                </li>
-            </ul>
+        <nav class="navbar navbar-expand-lg bg-transparent">
+            <div class="container-fluid d-flex justify-content-around align-items-center">
+                <a class="navbar-brand" href="../index.html"><img class="logo" src="../images/entreplantas.png" alt="logo"></a>
+                <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
+                    <span class="navbar-toggler-icon"></span>
+                </button>
+                <div class="collapse navbar-collapse justify-content-center" id="navbarNav">
+                    <ul class="navbar-nav">
+                        <li class="nav-item">
+                            <a class="nav-link menu-link" aria-current="page" href="deco-home.html">Deco</a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link menu-link" href="plantas.html">Plantas</a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link menu-link" href="macetas.html">Macetas</a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link menu-link" href="accesorios.html">Accesorios</a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link menu-link" href="contacto.html">Contacto</a>
+                        </li>
+                    </ul>
+                </div>
+            </div>
         </nav>
+        
     </header>
 
     <main>
         <section class="productos">
             <article class="producto">
-                <img src="../images/image7.jpg" alt="">
-                <span class="producto-texto">Potus Variegado</span>
+                <img src="../images/imagemaceta1.png" alt="">
+                <span class="producto-texto">Maceta de Barro</span>
+                <span class="producto-precio">$14000</span>
+                <button class="producto-boton">Comprar</button>
+            </article>
+
+            <article class="producto">
+                <img src="../images/macetacemento.png" alt="">
+                <span class="producto-texto">Maceta Cemento</span>
+                <span class="producto-precio">$23000</span>
+                <button class="producto-boton">Comprar</button>
+            </article>
+
+            <article class="producto">
+                <img src="../images/canastoyute.png" alt="">
+                <span class="producto-texto"> Canasto Macetero Yute</span>
+                <span class="producto-precio">$9000</span>
+                <button class="producto-boton">Comprar</button>
+            </article>
+
+            <article class="producto">
+                <img src="../images/macetapremium.png" alt="">
+                <span class="producto-texto">Maceta Premium n°27</span>
+                <span class="producto-precio">$9500</span>
+                <button class="producto-boton">Comprar</button>
+            </article>
+
+            <article class="producto">
+                <img src="../images/macetaporcelana (2).png" alt="">
+                <span class="producto-texto">Maceta Porcelana</span>
                 <span class="producto-precio">$8000</span>
                 <button class="producto-boton">Comprar</button>
             </article>
 
             <article class="producto">
-                <img src="../images/image9.jpg" alt="">
-                <span class="producto-texto">Crisantemo Blanco</span>
-                <span class="producto-precio">$4500</span>
-                <button class="producto-boton">Comprar</button>
-            </article>
-
-            <article class="producto">
-                <img src="../images/image10.jpg" alt="">
-                <span class="producto-texto">Estrella Federal</span>
-                <span class="producto-precio">$4500</span>
-                <button class="producto-boton">Comprar</button>
-            </article>
-
-            <article class="producto">
-                <img src="../images/image11.jpg" alt="">
-                <span class="producto-texto">Estrella Federal</span>
-                <span class="producto-precio">$4500</span>
-                <button class="producto-boton">Comprar</button>
-            </article>
-
-            <article class="producto">
-                <img src="../images/image8.jpg" alt="">
-                <span class="producto-texto">Palo de Agua</span>
-                <span class="producto-precio">$4500</span>
-                <button class="producto-boton">Comprar</button>
-            </article>
-
-            <article class="producto">
-                <img src="../images/image8.jpg" alt="">
-                <span class="producto-texto">Estrella Federal</span>
-                <span class="producto-precio">$4500</span>
+                <img src="../images/macetaplastica.png" alt="">
+                <span class="producto-texto">Maceta Plastica n°18</span>
+                <span class="producto-precio">$1800</span>
                 <button class="producto-boton">Comprar</button>
             </article>
         </section>
 
     </main>
     <footer>
-        <div>
+        <div class="logo-container">
             <img class="logo" src="../images/entreplantas.png" alt="logo">
         </div>
         <ul class="redes">
