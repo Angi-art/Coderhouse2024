@@ -1,15 +1,4 @@
 @charset "UTF-8";
-form input[type=submit], form input[type=text],
-form input[type=email],
-form input[type=number] {
-  border-radius: 5px;
-}
-
-.accesorio, .maceta, .producto, .nav-link, .logo {
-  animation: grow 0.8s ease-in-out forwards;
-  opacity: 0;
-}
-
 * {
   margin: 0;
   padding: 0;
@@ -22,13 +11,14 @@ html {
 }
 
 body {
-  background-color: #c4f7c7;
+  background-color: rgb(212, 246, 171);
   overflow: auto;
 }
 
-main {
-  margin-top: 30px;
-  margin-bottom: 30px;
+.main {
+  padding-top: 30px;
+  padding-bottom: 30px;
+  background-color: rgb(212, 246, 171);
 }
 
 .logo {
@@ -41,6 +31,7 @@ main {
 .logo-container {
   width: 100px;
   padding-left: 20px;
+  margin-top: 1rem;
 }
 
 .video-container {
@@ -68,36 +59,46 @@ ol {
   list-style-type: none;
 }
 
+img {
+  width: 100%;
+}
+
 .container {
   max-width: 1440px;
   margin-left: auto;
   margin-right: auto;
+  padding-top: 30px;
+  padding-bottom: 30px;
+  background-color: rgb(212, 246, 171);
 }
 
 .encabezado {
   background-color: cadetblue;
+  display: flex;
+  align-items: center;
+  justify-content: center;
   gap: 30rem;
   background-image: url("../images/image1.jpg");
   background-position: center;
   background-size: cover;
   flex-wrap: wrap;
-  padding: 10px;
+  padding: 20px;
 }
 
 .menu-list {
   display: flex;
-  flex-direction: row;
-  justify-content: space-between;
-  align-items: center;
   gap: 5rem;
+  flex-wrap: wrap;
+  padding: 1rem;
+  justify-content: center;
+  align-items: center;
 }
-.menu-list .menu-link {
+
+.menu-link {
   color: #fff !important;
   font-size: 2rem !important;
+  margin-left: 20px;
   text-decoration: underline !important;
-}
-.menu-list .menu-link:hover {
-  color: cadetblue;
 }
 
 /* Seccion productos main */
@@ -121,8 +122,8 @@ ol {
   font-size: 2rem;
 }
 .producto img {
-  height: 330px;
-  width: 330px;
+  height: 40vh;
+  object-fit: cover;
 }
 .producto-precio {
   font-size: 1.5rem;
@@ -138,11 +139,15 @@ ol {
   font-weight: bold;
 }
 
-.producto-descripcion {
-  font-size: 16px;
-  text-align: center;
+@media (max-width: 500px) {
+  .producto {
+    width: 100%;
+  }
+  .producto img {
+    height: 300px;
+    width: 300px;
+  }
 }
-
 .carousel-item {
   height: 800px;
   width: 200px;
@@ -156,8 +161,6 @@ footer {
   justify-content: center;
   align-items: center;
   gap: 3rem;
-  width: 100%;
-  padding-top: 10px;
 }
 
 .copyright {
@@ -190,9 +193,7 @@ footer a i {
 @media (max-width: 1500px) {
   .encabezado {
     gap: 3rem;
-  }
-  .logo-container {
-    margin-top: 1rem;
+    justify-content: space-between;
   }
 }
 /*add style custom*/
@@ -214,10 +215,7 @@ form {
   gap: 1rem;
   background-color: rgb(212, 246, 171);
   margin-top: 100px;
-  margin-bottom: 20px;
   width: 50%;
-  margin-left: auto;
-  margin-right: auto;
 }
 
 /* Form labels */
@@ -236,7 +234,8 @@ form input[type=number] {
   padding: 1rem;
   font-size: 1.6rem;
   border: 1px solid #ccc;
-  height: 40px;
+  border-radius: 5px;
+  height: 50px;
 }
 
 #mensaje {
@@ -250,15 +249,16 @@ form input[type=submit] {
   background-color: cadetblue;
   padding: 1rem 2rem;
   border: none;
+  border-radius: 5px;
   cursor: pointer;
 }
 
 #fullscreen-video {
   width: 100vw;
   height: 100vh;
-  object-fit: cover;
-  z-index: -1;
-  position: fixed;
+  object-fit: cover; /* Asegura que el video cubra toda el área disponible */
+  z-index: -1; /* Coloca el video detrás de otros elementos */
+  position: fixed; /* Fija el video en su lugar mientras se desplaza la página */
 }
 
 .text {
@@ -267,7 +267,9 @@ form input[type=submit] {
 
 .text-container {
   margin-top: 20px;
-  text-align: center;
+  width: 50%;
+  display: flex;
+  align-items: center;
 }
 
 .contacto {
@@ -282,6 +284,73 @@ form input[type=submit] {
   gap: 15px !important; /* Espacio entre los elementos del menú */
 }
 
+.macetas {
+  display: flex;
+  flex-direction: column;
+  gap: 2rem;
+}
+
+.maceta {
+  display: flex;
+  background-color: #f5f5f5;
+  padding: 1.5rem;
+  border-radius: 8px;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+  gap: 2rem;
+  align-items: center;
+}
+.maceta-imagen img {
+  width: 150px;
+  height: auto;
+  border-radius: 8px;
+  object-fit: cover;
+}
+.maceta-detalle {
+  display: flex;
+  flex-direction: column;
+  gap: 0.5rem;
+  flex-grow: 1;
+}
+.maceta-texto {
+  font-size: 2rem;
+  font-weight: bold;
+  margin: 0;
+}
+.maceta-descripcion {
+  font-size: 1.4rem;
+  color: #555;
+  line-height: 1.5;
+}
+.maceta-precio {
+  font-size: 1.8rem;
+  font-weight: bold;
+  color: #2ecc71;
+  margin-top: 0.5rem;
+}
+.maceta-boton {
+  margin-top: 1rem;
+  padding: 0.8rem 2rem;
+  font-size: 1.4rem;
+  font-weight: bold;
+  color: #fff;
+  background-color: #3498db;
+  border: none;
+  border-radius: 5px;
+  cursor: pointer;
+  align-self: start;
+}
+.maceta-boton:hover {
+  background-color: rgb(36.7380753138, 138.7882845188, 207.1619246862);
+}
+
+.navbar-toggler-icon {
+  background-color: white;
+}
+
+.navbar-toggler {
+  background-color: white !important;
+}
+
 @keyframes grow {
   0% {
     transform: scale(0.8);
@@ -292,14 +361,28 @@ form input[type=submit] {
     opacity: 1;
   }
 }
+.logo {
+  animation: grow 1s ease-in-out forwards;
+}
+
 .nav-link {
-  animation-delay: 0.3s;
-  opacity: 0;
+  animation: grow 0.8s ease-in-out forwards;
+  animation-delay: 0.3s; /* Agrega un ligero retraso para que se vea en secuencia */
+  opacity: 0; /* Para iniciar la animación con un efecto de aparición */
 }
 
 .accesorio, .maceta, .producto {
-  animation-delay: 0.5s;
-  opacity: 0;
+  animation: grow 0.8s ease-in-out forwards;
+  animation-delay: 0.5s; /* Ajusta el retraso para cada uno según quieras */
+  opacity: 0; /* Para iniciar la animación con un efecto de aparición */
+}
+
+.contacto-container {
+  display: flex;
+}
+
+#encabezado-contenedor {
+  display: flex;
 }
 
 /*# sourceMappingURL=style.css.map */
