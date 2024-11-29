@@ -1,11 +1,9 @@
-@charset "UTF-8";
 * {
   margin: 0;
   padding: 0;
   box-sizing: border-box;
 }
 
-/* este reset hace que 1rem o 1em sea = a 10px */
 html {
   font-size: 62.5%;
 }
@@ -101,7 +99,6 @@ img {
   text-decoration: underline !important;
 }
 
-/* Seccion productos main */
 .productos {
   display: flex;
   justify-content: center;
@@ -153,7 +150,6 @@ img {
   width: 200px;
 }
 
-/* Estilos footer */
 footer {
   background-color: lavender;
   display: flex;
@@ -196,18 +192,15 @@ footer a i {
     justify-content: space-between;
   }
 }
-/*add style custom*/
 .custom-slide {
   height: 500px;
   width: 500px;
 }
 
-/*imagen carrousel*/
 .carousel-item img {
   object-fit: none;
 }
 
-/* estilo formulario */
 form {
   display: flex;
   flex-direction: column;
@@ -218,7 +211,6 @@ form {
   width: 50%;
 }
 
-/* Form labels */
 form label {
   font-size: 1.8rem;
   margin-bottom: 0.5rem;
@@ -226,7 +218,6 @@ form label {
   width: 100%;
 }
 
-/* Input fields styling */
 form input[type=text],
 form input[type=email],
 form input[type=number] {
@@ -242,7 +233,6 @@ form input[type=number] {
   height: 150px;
 }
 
-/* Submit button styling */
 form input[type=submit] {
   font-size: 2rem;
   color: #fff;
@@ -256,9 +246,9 @@ form input[type=submit] {
 #fullscreen-video {
   width: 100vw;
   height: 100vh;
-  object-fit: cover; /* Asegura que el video cubra toda el área disponible */
-  z-index: -1; /* Coloca el video detrás de otros elementos */
-  position: fixed; /* Fija el video en su lugar mientras se desplaza la página */
+  object-fit: cover;
+  z-index: -1;
+  position: fixed;
 }
 
 .text {
@@ -277,11 +267,11 @@ form input[type=submit] {
 }
 
 .navbar-brand {
-  margin-right: 20px !important; /* Ajusta la separación entre el logo y el menú */
+  margin-right: 20px !important;
 }
 
 .navbar-nav {
-  gap: 15px !important; /* Espacio entre los elementos del menú */
+  gap: 15px !important;
 }
 
 .macetas {
@@ -367,14 +357,16 @@ form input[type=submit] {
 
 .nav-link {
   animation: grow 0.8s ease-in-out forwards;
-  animation-delay: 0.3s; /* Agrega un ligero retraso para que se vea en secuencia */
-  opacity: 0; /* Para iniciar la animación con un efecto de aparición */
+  animation-delay: 0.3s;
+  opacity: 0;
 }
 
-.accesorio, .maceta, .producto {
+.accesorio,
+.maceta,
+.producto {
   animation: grow 0.8s ease-in-out forwards;
-  animation-delay: 0.5s; /* Ajusta el retraso para cada uno según quieras */
-  opacity: 0; /* Para iniciar la animación con un efecto de aparición */
+  animation-delay: 0.5s;
+  opacity: 0;
 }
 
 .contacto-container {

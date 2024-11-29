@@ -1,13 +1,14 @@
 $color1: rgb(212, 246, 171);
 $color2: cadetblue;
 @use "sass:color";
+
 * {
     margin: 0;
     padding: 0;
     box-sizing: border-box;
 }
 
-/* este reset hace que 1rem o 1em sea = a 10px */
+
 html {
     font-size: 62.5%;
 }
@@ -17,11 +18,11 @@ body {
     overflow: auto;
 }
 
-.main{
+.main {
     padding-top: 30px;
     padding-bottom: 30px;
     background-color: rgb(212, 246, 171);
-    
+
 }
 
 .logo {
@@ -29,8 +30,9 @@ body {
     height: 80px;
     border-radius: 50%;
     object-fit: cover;
-  }
-.logo-container{
+}
+
+.logo-container {
     width: 100px;
     padding-left: 20px;
     margin-top: 1rem;
@@ -44,10 +46,10 @@ body {
     height: 100vh;
     z-index: -1;
     overflow: hidden;
-  }
+}
 
 
-  .video-container video {
+.video-container video {
     position: absolute;
     top: 50%;
     left: 50%;
@@ -55,7 +57,7 @@ body {
     height: 100vh;
     object-fit: cover;
     transform: translate(-50%, -50%);
-  }
+}
 
 ul,
 ol {
@@ -74,14 +76,14 @@ img {
     margin-right: auto;
     padding-top: 30px;
     padding-bottom: 30px;
-    background-color:rgb(212, 246, 171);
+    background-color: rgb(212, 246, 171);
 }
 
 .encabezado {
     background-color: $color2;
     display: flex;
     align-items: center;
-    justify-content:center;
+    justify-content: center;
     gap: 30rem;
     background-image: url("../images/image1.jpg");
     background-position: center;
@@ -107,7 +109,6 @@ img {
     text-decoration: underline !important;
 }
 
-/* Seccion productos main */
 
 .productos {
     display: flex;
@@ -144,29 +145,30 @@ img {
         border: none;
         background-color: gray;
         font-size: 1.5rem;
-        border-radius: 50px; 
+        border-radius: 50px;
         padding: 1rem;
         cursor: pointer;
         font-weight: bold;
     }
 }
+
 @media (max-width:500px) {
     .producto {
         width: 100%;
     }
+
     .producto img {
         height: 300px;
         width: 300px;
     }
 
 }
-  
+
 .carousel-item {
     height: 800px;
     width: 200px;
 }
 
-/* Estilos footer */
 
 footer {
     background-color: lavender;
@@ -209,23 +211,17 @@ footer a i {
         gap: 3rem;
         justify-content: space-between;
     }
-
-    
 }
-/*add style custom*/
 
 .custom-slide {
     height: 500px;
     width: 500px;
 }
 
-/*imagen carrousel*/
-
 .carousel-item img {
     object-fit: none;
 }
 
-/* estilo formulario */
 form {
     display: flex;
     flex-direction: column;
@@ -237,7 +233,6 @@ form {
 
 }
 
-/* Form labels */
 form label {
     font-size: 1.8rem;
     margin-bottom: 0.5rem;
@@ -246,7 +241,6 @@ form label {
 
 }
 
-/* Input fields styling */
 form input[type="text"],
 form input[type="email"],
 form input[type="number"] {
@@ -258,10 +252,11 @@ form input[type="number"] {
     height: 50px;
 
 }
-#mensaje{
+
+#mensaje {
     height: 150px;
 }
-/* Submit button styling */
+
 form input[type="submit"] {
     font-size: 2rem;
     color: #fff;
@@ -272,33 +267,40 @@ form input[type="submit"] {
     cursor: pointer;
 
 }
+
 #fullscreen-video {
     width: 100vw;
     height: 100vh;
-    object-fit: cover;/* Asegura que el video cubra toda el área disponible */
-    z-index: -1;/* Coloca el video detrás de otros elementos */
-    position: fixed;/* Fija el video en su lugar mientras se desplaza la página */
+    object-fit: cover;
+    z-index: -1;
+    position: fixed;
+
 }
-.text{
+
+.text {
     font-size: 20px;
 }
-.text-container{
+
+.text-container {
     margin-top: 20px;
     width: 50%;
     display: flex;
     align-items: center;
 
 }
-.contacto{
+
+.contacto {
     background-color: rgb(212, 246, 171);
 }
 
 .navbar-brand {
-    margin-right: 20px !important; /* Ajusta la separación entre el logo y el menú */
+    margin-right: 20px !important;
+
 }
 
 .navbar-nav {
-    gap: 15px !important; /* Espacio entre los elementos del menú */
+    gap: 15px !important;
+
 }
 
 .macetas {
@@ -363,42 +365,54 @@ form input[type="submit"] {
     }
 
     &-boton:hover {
-        background-color: color.scale(#3498db, $lightness: -10%);    }
+        background-color: color.scale(#3498db, $lightness: -10%);
+    }
 }
+
 .navbar-toggler-icon {
     background-color: white;
 }
-.navbar-toggler{
+
+.navbar-toggler {
     background-color: white !important;
 }
+
 @keyframes grow {
     0% {
-      transform: scale(0.8);
-      opacity: 0;
+        transform: scale(0.8);
+        opacity: 0;
     }
+
     100% {
-      transform: scale(1);
-      opacity: 1;
+        transform: scale(1);
+        opacity: 1;
     }
-  }
-  .logo {
+}
+
+.logo {
     animation: grow 1s ease-in-out forwards;
-  }
-  
-  .nav-link {
+}
+
+.nav-link {
     animation: grow 0.8s ease-in-out forwards;
-    animation-delay: 0.3s; /* Agrega un ligero retraso para que se vea en secuencia */
-    opacity: 0; /* Para iniciar la animación con un efecto de aparición */
-  }
-  
-  .accesorio, .maceta, .producto {
+    animation-delay: 0.3s;
+    opacity: 0;
+
+}
+
+.accesorio,
+.maceta,
+.producto {
     animation: grow 0.8s ease-in-out forwards;
-    animation-delay: 0.5s; /* Ajusta el retraso para cada uno según quieras */
-    opacity: 0; /* Para iniciar la animación con un efecto de aparición */
-  }
-  .contacto-container{
+    animation-delay: 0.5s;
+    opacity: 0;
+
+}
+
+.contacto-container {
     display: flex;
-  }
-  #encabezado-contenedor{
+}
+
+#encabezado-contenedor {
     display: flex;
-  }
+}
