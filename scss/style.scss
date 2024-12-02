@@ -21,7 +21,7 @@ body {
 .main {
     padding-top: 30px;
     padding-bottom: 30px;
-    background-color: rgb(212, 246, 171);
+    background-color: $color1;
 
 }
 
@@ -76,7 +76,7 @@ img {
     margin-right: auto;
     padding-top: 30px;
     padding-bottom: 30px;
-    background-color: rgb(212, 246, 171);
+    background-color: $color1;
 }
 
 .encabezado {
@@ -227,7 +227,7 @@ form {
     flex-direction: column;
     align-items: center;
     gap: 1rem;
-    background-color: rgb(212, 246, 171);
+    background-color: $color1;
     margin-top: 100px;
     width: 50%;
 
@@ -290,7 +290,7 @@ form input[type="submit"] {
 }
 
 .contacto {
-    background-color: rgb(212, 246, 171);
+    background-color: $color1;
 }
 
 .navbar-brand {
